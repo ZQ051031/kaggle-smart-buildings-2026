@@ -1,0 +1,18 @@
+{
+  "kp": 0.07,
+  "ki": 0.0035,
+  "integral_limit": 1.0,
+  "prestart_hours": 2.0,
+  "cooling_hold_steps": 288.0,
+  "heating_setback": 2.0,
+  "damper_gain": 1.0,
+  "reheat_gain": 1.0,
+  "fan_base": 0.1,
+  "fan_gain": 0.7,
+  "sat_base": 295.0,
+  "sat_gain": 10.0,
+  "water_base": 0.0,
+  "water_gain": 1.0,
+  "on_threshold": 0.03,
+  "econ_advantage": 2.0
+}

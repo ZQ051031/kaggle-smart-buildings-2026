@@ -1,0 +1,92 @@
+[
+  {
+    "building": "building_train_1",
+    "weather": "fairbanks_1",
+    "policy": "pid_water",
+    "num_steps": 2016,
+    "total_reward": -763.3904542517266,
+    "mean_reward": -0.3786658999264517,
+    "component_totals": {
+      "normalized_productivity_regret": -385.56630572117865,
+      "normalized_energy_cost": 1033.9656992428936,
+      "normalized_carbon_emission": 1626.287653742911
+    },
+    "seconds_per_step": 0.047008006582836506,
+    "controller_seconds_per_step": 0.0003849966150797498
+  },
+  {
+    "building": "building_train_1",
+    "weather": "fairbanks_1",
+    "policy": "tuned",
+    "num_steps": 2016,
+    "total_reward": -536.7467154887854,
+    "mean_reward": -0.26624341046070704,
+    "component_totals": {
+      "normalized_productivity_regret": -28.482556115370244,
+      "normalized_energy_cost": 941.134437975008,
+      "normalized_carbon_emission": 1657.1514706779853
+    },
+    "seconds_per_step": 0.04707435499851158,
+    "controller_seconds_per_step": 0.00040600146924602096
+  },
+  {
+    "building": "building_train_2",
+    "weather": "phoenix_6",
+    "policy": "pid_water",
+    "num_steps": 2016,
+    "total_reward": -186.6504259480862,
+    "mean_reward": -0.09258453668059831,
+    "component_totals": {
+      "normalized_productivity_regret": -187.65440407639835,
+      "normalized_energy_cost": 273.76094061962795,
+      "normalized_carbon_emission": 96.52797679464857
+    },
+    "seconds_per_step": 0.09753166424007956,
+    "controller_seconds_per_step": 0.0005127729687506829
+  },
+  {
+    "building": "building_train_2",
+    "weather": "phoenix_6",
+    "policy": "tuned",
+    "num_steps": 2016,
+    "total_reward": -71.77376434236066,
+    "mean_reward": -0.03560206564601223,
+    "component_totals": {
+      "normalized_productivity_regret": 0.0,
+      "normalized_energy_cost": 290.26422261144035,
+      "normalized_carbon_emission": 68.60459910123609
+    },
+    "seconds_per_step": 0.09442976669196433,
+    "controller_seconds_per_step": 0.00048686607737961267
+  },
+  {
+    "building": "building_train_5",
+    "weather": "singapore_4",
+    "policy": "pid_water",
+    "num_steps": 2016,
+    "total_reward": -158.99089697816817,
+    "mean_reward": -0.07886453223123421,
+    "component_totals": {
+      "normalized_productivity_regret": -162.20294280338385,
+      "normalized_energy_cost": 215.9586071719532,
+      "normalized_carbon_emission": 92.38705055316677
+    },
+    "seconds_per_step": 0.06987175771577293,
+    "controller_seconds_per_step": 0.0004547817762890139
+  },
+  {
+    "building": "building_train_5",
+    "weather": "singapore_4",
+    "policy": "tuned",
+    "num_steps": 2016,
+    "total_reward": -40.24465192807838,
+    "mean_reward": -0.019962624964324594,
+    "component_totals": {
+      "normalized_productivity_regret": 0.0,
+      "normalized_energy_cost": 163.4349014540203,
+      "normalized_carbon_emission": 37.78835820988752
+    },
+    "seconds_per_step": 0.07055660543005943,
+    "controller_seconds_per_step": 0.000503404490079189
+  }
+]

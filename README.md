@@ -7,6 +7,35 @@ For procedural training, resumable parameter search and parallel evaluation,
 see [TRAINING.md](TRAINING.md). The benchmarks below record the initial defaults;
 an active search may subsequently promote a new `sbctl/params.json`.
 
+## Kaggle submission
+
+`kaggle/submission.ipynb` is a standalone notebook with the controller and a
+frozen parameter literal embedded. Attach competition data, disable internet,
+then **Save & Run All** and **Submit**. No code dataset or pip install is needed.
+
+Regenerate after changing policy/parameters (including ES promotions):
+
+```sh
+/home/ubuntu/sbenv/bin/python tools/build_notebook.py
+/home/ubuntu/sbenv/bin/python tools/build_notebook.py --check
+```
+
+The wrapper validates output shapes/dtypes, clips finite actions, and falls back
+to the last valid action on exceptions or malformed outputs. Before the first
+valid output it uses minimum continuous commands and equipment off; persistent
+fallback is not guaranteed to preserve comfort. Offline tests execute the
+notebook against a synthetic inference-server fixture, including failure cases.
+The actual Kaggle server is not included or tested here.
+
+Development/CI dependencies are in `requirements-dev.txt`. GitHub Actions runs
+Ruff, synthetic pytest tests (real simulator tests skip without the starter),
+and notebook freshness checking on Python 3.12. To run only synthetic tests
+locally while a search is active:
+
+```sh
+SB_STARTER_KIT=/nonexistent-starter-kit /home/ubuntu/sbenv/bin/python -m pytest -q
+```
+
 ## Run
 
 ```sh

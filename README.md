@@ -3,6 +3,10 @@
 Portable NumPy PI zone controller for the NeurIPS 2026 Smart Buildings task.
 No climate/building identifiers enter the controller. No remote is configured.
 
+For procedural training, resumable parameter search and parallel evaluation,
+see [TRAINING.md](TRAINING.md). The benchmarks below record the initial defaults;
+an active search may subsequently promote a new `sbctl/params.json`.
+
 ## Run
 
 ```sh

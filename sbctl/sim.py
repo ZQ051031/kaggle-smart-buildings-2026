@@ -5,6 +5,7 @@ from contextlib import contextmanager
 import json
 import os
 from pathlib import Path
+import random
 import sys
 import time
 
@@ -25,7 +26,8 @@ def starter_cwd():
     """Resolve the starter's relative gin assets within one worker process."""
     previous = Path.cwd()
     root = starter_path()
-    sys.path.insert(0, str(root))
+    if str(root) not in sys.path:
+        sys.path.insert(0, str(root))
     os.chdir(root)
     try:
         yield root
@@ -34,39 +36,52 @@ def starter_cwd():
 
 
 def rollout(
-    building,
-    weather,
+    building=None,
+    weather=None,
     steps=288,
     start_offset=0,
     policy="tuned",
     params=None,
     audit=None,
+    scenario_dir=None,
+    seed=0,
 ):
     """Roll out a policy headlessly, collecting rewards and normalized terms."""
     if steps < 0 or start_offset < 0:
         raise ValueError("steps and start_offset must be nonnegative")
+    scenario = Path(scenario_dir).resolve() if scenario_dir is not None else None
+    audit_path = Path(audit).resolve() if audit else None
+    random.seed(seed)
+    np.random.seed(seed)
     with starter_cwd() as root:
         from smart_buildings.evaluate import (
             load_hybrid_environment,
             create_building_meta_data,
             validate_action,
+            POLICY_MAP,
         )
-        from smart_buildings.baselines.pid_plus import PIDWaterResetPolicy
 
-        scenario = root / "smart_buildings" / "training_scenarios" / building / weather
+        if scenario is None:
+            if building is None or weather is None:
+                raise ValueError("Provide scenario_dir or both building and weather")
+            scenario = (
+                root / "smart_buildings" / "training_scenarios" / building / weather
+            )
+        if policy != "tuned" and policy not in POLICY_MAP:
+            raise ValueError(f"Unknown policy: {policy}")
         env = load_hybrid_environment(scenario / "config.gin")
         env.metrics_path = None
         env._occupancy_normalization_constant = 125.0
         meta = create_building_meta_data(env, scenario)
-        cls = PIDWaterResetPolicy if policy == "pid_water" else TunedTransferPolicy
+        cls = TunedTransferPolicy if policy == "tuned" else POLICY_MAP[policy]
         controller = (
             cls(meta, env.action_spec())
-            if policy == "pid_water"
+            if policy != "tuned"
             else cls(meta, env.action_spec(), params=params)
         )
         obs, _ = env.reset()
-        if audit:
-            Path(audit).write_text(
+        if audit_path:
+            audit_path.write_text(
                 json.dumps(
                     dict(
                         observations=dict(
@@ -112,9 +127,11 @@ def rollout(
             if terminated or truncated:
                 break
         count = i + 1 if steps + start_offset else 0
+        del env.get_reward_info_and_response
         return dict(
-            building=building,
-            weather=weather,
+            building=building or scenario.parent.name,
+            weather=weather or scenario.name,
+            scenario_dir=str(scenario),
             policy=policy,
             num_steps=len(rewards),
             total_reward=sum(rewards),
@@ -127,11 +144,13 @@ def rollout(
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("building")
-    parser.add_argument("weather")
+    parser.add_argument("building", nargs="?")
+    parser.add_argument("weather", nargs="?")
+    parser.add_argument("--scenario-dir", type=Path)
     parser.add_argument("--steps", type=int, default=288)
     parser.add_argument("--start-offset", type=int, default=0)
-    parser.add_argument("--policy", choices=["tuned", "pid_water"], default="tuned")
+    parser.add_argument("--policy", default="tuned")
+    parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--audit")
     args = vars(parser.parse_args())
     print(json.dumps(rollout(**args)), flush=True)

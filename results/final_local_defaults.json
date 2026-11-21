@@ -1,0 +1,489 @@
+{
+  "steps": 2016,
+  "metric": 0.02781474632910511,
+  "scenarios": [
+    {
+      "building": "building_train_1",
+      "weather": "atlanta_2",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -19.567939008935355,
+      "mean_reward": -0.009706318952844918,
+      "component_totals": {
+        "normalized_productivity_regret": -0.0212860107421875,
+        "normalized_energy_cost": 53.3838911766652,
+        "normalized_carbon_emission": 44.39194582484197
+      },
+      "seconds_per_step": 0.041876675397337935,
+      "controller_seconds_per_step": 0.0003585207628769615
+    },
+    {
+      "building": "building_train_1",
+      "weather": "denver_7",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -20.824789483682252,
+      "mean_reward": -0.010329756688334451,
+      "component_totals": {
+        "normalized_productivity_regret": -0.02278747595846653,
+        "normalized_energy_cost": 51.10925673902966,
+        "normalized_carbon_emission": 52.94632820182596
+      },
+      "seconds_per_step": 0.04172477507194297,
+      "controller_seconds_per_step": 0.0003525631527718505
+    },
+    {
+      "building": "building_train_1",
+      "weather": "fairbanks_1",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -536.7467154887854,
+      "mean_reward": -0.26624341046070704,
+      "component_totals": {
+        "normalized_productivity_regret": -28.482556115370244,
+        "normalized_energy_cost": 941.134437975008,
+        "normalized_carbon_emission": 1657.1514706779853
+      },
+      "seconds_per_step": 0.04156693813541869,
+      "controller_seconds_per_step": 0.0003424615575317336
+    },
+    {
+      "building": "building_train_1",
+      "weather": "phoenix_5",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -90.17050931032281,
+      "mean_reward": -0.044727435173771236,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 365.7672340099234,
+        "normalized_carbon_emission": 85.08531304629287
+      },
+      "seconds_per_step": 0.04208690197567323,
+      "controller_seconds_per_step": 0.0003483691517865895
+    },
+    {
+      "building": "building_train_1",
+      "weather": "singapore_8",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -45.063581781985704,
+      "mean_reward": -0.02235296715376275,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 181.5826714921277,
+        "normalized_carbon_emission": 43.735237286193296
+      },
+      "seconds_per_step": 0.04139448162896005,
+      "controller_seconds_per_step": 0.00034042690724852886
+    },
+    {
+      "building": "building_train_2",
+      "weather": "atlanta_3",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -18.095885408722097,
+      "mean_reward": -0.008976133635278818,
+      "component_totals": {
+        "normalized_productivity_regret": -0.36586066337235934,
+        "normalized_energy_cost": 61.16473229904659,
+        "normalized_carbon_emission": 28.21711272536777
+      },
+      "seconds_per_step": 0.08674603427727691,
+      "controller_seconds_per_step": 0.0004806690174018874
+    },
+    {
+      "building": "building_train_2",
+      "weather": "denver_8",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -35.794219852774404,
+      "mean_reward": -0.017755069371415876,
+      "component_totals": {
+        "normalized_productivity_regret": -0.024249885838798946,
+        "normalized_energy_cost": 64.56453287240583,
+        "normalized_carbon_emission": 114.33381691624527
+      },
+      "seconds_per_step": 0.08575179319497317,
+      "controller_seconds_per_step": 0.000458093552550862
+    },
+    {
+      "building": "building_train_2",
+      "weather": "fairbanks_2",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -81.77164541259117,
+      "mean_reward": -0.04056133204989641,
+      "component_totals": {
+        "normalized_productivity_regret": -0.14973245060241425,
+        "normalized_energy_cost": 138.15149161190493,
+        "normalized_carbon_emission": 270.25753822356637
+      },
+      "seconds_per_step": 0.08637355490823066,
+      "controller_seconds_per_step": 0.0004500333581297979
+    },
+    {
+      "building": "building_train_2",
+      "weather": "phoenix_6",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -71.77376434236066,
+      "mean_reward": -0.03560206564601223,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 290.26422261144035,
+        "normalized_carbon_emission": 68.60459910123609
+      },
+      "seconds_per_step": 0.0855587063313358,
+      "controller_seconds_per_step": 0.00043954791319341285
+    },
+    {
+      "building": "building_train_2",
+      "weather": "singapore_1",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -32.878739636944374,
+      "mean_reward": -0.016308898629436692,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 132.01456446934026,
+        "normalized_carbon_emission": 32.37913367897272
+      },
+      "seconds_per_step": 0.08569762005007461,
+      "controller_seconds_per_step": 0.00044169970089122157
+    },
+    {
+      "building": "building_train_4",
+      "weather": "atlanta_5",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -37.64120081013243,
+      "mean_reward": -0.018671230560581564,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 153.04643646709155,
+        "normalized_carbon_emission": 35.15956774652295
+      },
+      "seconds_per_step": 0.05775324744939149,
+      "controller_seconds_per_step": 0.00037569490971164335
+    },
+    {
+      "building": "building_train_4",
+      "weather": "denver_2",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -31.473710741651303,
+      "mean_reward": -0.015611959693279416,
+      "component_totals": {
+        "normalized_productivity_regret": -0.004845800714974757,
+        "normalized_energy_cost": 62.168980853195535,
+        "normalized_carbon_emission": 95.18503529539885
+      },
+      "seconds_per_step": 0.05748615163740725,
+      "controller_seconds_per_step": 0.00038719214732072795
+    },
+    {
+      "building": "building_train_4",
+      "weather": "fairbanks_4",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -18.201576528947044,
+      "mean_reward": -0.009028559786184049,
+      "component_totals": {
+        "normalized_productivity_regret": -0.000396262760659738,
+        "normalized_energy_cost": 43.44260241300799,
+        "normalized_carbon_emission": 47.564091452164575
+      },
+      "seconds_per_step": 0.060209092777774406,
+      "controller_seconds_per_step": 0.00039971724653054165
+    },
+    {
+      "building": "building_train_4",
+      "weather": "phoenix_8",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -16.53363368731516,
+      "mean_reward": -0.008201207186168234,
+      "component_totals": {
+        "normalized_productivity_regret": -0.09740735333616612,
+        "normalized_energy_cost": 56.41117691178806,
+        "normalized_carbon_emission": 25.964769532714854
+      },
+      "seconds_per_step": 0.059436233809998656,
+      "controller_seconds_per_step": 0.00039953533234171433
+    },
+    {
+      "building": "building_train_4",
+      "weather": "singapore_3",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -46.05401111593528,
+      "mean_reward": -0.02284425154560282,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 187.3887764828396,
+        "normalized_carbon_emission": 42.88127913379867
+      },
+      "seconds_per_step": 0.060629280578838,
+      "controller_seconds_per_step": 0.00038195844641515056
+    },
+    {
+      "building": "building_train_5",
+      "weather": "atlanta_6",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -33.65329970495077,
+      "mean_reward": -0.016693105012376374,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 136.8699633521028,
+        "normalized_carbon_emission": 31.396535261155805
+      },
+      "seconds_per_step": 0.05875855919343903,
+      "controller_seconds_per_step": 0.00042477431745124156
+    },
+    {
+      "building": "building_train_5",
+      "weather": "denver_3",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -29.685060088231694,
+      "mean_reward": -0.014724732186622864,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 57.224063365138136,
+        "normalized_carbon_emission": 91.20123718623654
+      },
+      "seconds_per_step": 0.06149041997963332,
+      "controller_seconds_per_step": 0.0004483974940390071
+    },
+    {
+      "building": "building_train_5",
+      "weather": "fairbanks_5",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -13.701056347148551,
+      "mean_reward": -0.006796158902355432,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 51.45263006849564,
+        "normalized_carbon_emission": 17.052651767633506
+      },
+      "seconds_per_step": 0.06165748371278286,
+      "controller_seconds_per_step": 0.0004637554682645598
+    },
+    {
+      "building": "building_train_5",
+      "weather": "phoenix_1",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -20.8867139161448,
+      "mean_reward": -0.010360473172690872,
+      "component_totals": {
+        "normalized_productivity_regret": -0.00591674807947129,
+        "normalized_energy_cost": 46.833166377502494,
+        "normalized_carbon_emission": 57.58265278820181
+      },
+      "seconds_per_step": 0.06080122492661152,
+      "controller_seconds_per_step": 0.0004479675927471016
+    },
+    {
+      "building": "building_train_5",
+      "weather": "singapore_4",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -40.24465192807838,
+      "mean_reward": -0.019962624964324594,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 163.4349014540203,
+        "normalized_carbon_emission": 37.78835820988752
+      },
+      "seconds_per_step": 0.06205370825449112,
+      "controller_seconds_per_step": 0.000442811159206348
+    },
+    {
+      "building": "building_train_7",
+      "weather": "atlanta_8",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -35.51367854035925,
+      "mean_reward": -0.01761591197438455,
+      "component_totals": {
+        "normalized_productivity_regret": -0.0033668045689410064,
+        "normalized_energy_cost": 66.75837031856645,
+        "normalized_carbon_emission": 110.79992187558673
+      },
+      "seconds_per_step": 0.023169325577409187,
+      "controller_seconds_per_step": 0.00034500358630238124
+    },
+    {
+      "building": "building_train_7",
+      "weather": "denver_5",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -20.08121369263972,
+      "mean_reward": -0.009960919490396687,
+      "component_totals": {
+        "normalized_productivity_regret": -1.1998058401213711,
+        "normalized_energy_cost": 69.89257212931989,
+        "normalized_carbon_emission": 26.914078694782802
+      },
+      "seconds_per_step": 0.024976382353684816,
+      "controller_seconds_per_step": 0.00036693149553006124
+    },
+    {
+      "building": "building_train_7",
+      "weather": "fairbanks_7",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -34.663191702071344,
+      "mean_reward": -0.01719404350301158,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 61.04124058957677,
+        "normalized_carbon_emission": 112.27471786993556
+      },
+      "seconds_per_step": 0.024889029393375856,
+      "controller_seconds_per_step": 0.00035735204115672746
+    },
+    {
+      "building": "building_train_7",
+      "weather": "phoenix_3",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -34.128774230281124,
+      "mean_reward": -0.016928955471369606,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 136.9060654346249,
+        "normalized_carbon_emission": 33.73780565924244
+      },
+      "seconds_per_step": 0.024966223629476984,
+      "controller_seconds_per_step": 0.0003518413159868249
+    },
+    {
+      "building": "building_train_7",
+      "weather": "singapore_6",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -48.09876112145139,
+      "mean_reward": -0.023858512461037394,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 193.70613050786778,
+        "normalized_carbon_emission": 46.78767505323049
+      },
+      "seconds_per_step": 0.024242910382945917,
+      "controller_seconds_per_step": 0.00033525002081407566
+    },
+    {
+      "building": "building_train_8",
+      "weather": "atlanta_1",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -25.145426120143384,
+      "mean_reward": -0.012472929623086996,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 58.29732357204193,
+        "normalized_carbon_emission": 67.42980720331252
+      },
+      "seconds_per_step": 0.020337989375987613,
+      "controller_seconds_per_step": 0.00030954944345864085
+    },
+    {
+      "building": "building_train_8",
+      "weather": "denver_6",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -27.72720771112654,
+      "mean_reward": -0.01375357525353499,
+      "component_totals": {
+        "normalized_productivity_regret": -0.11067460514328786,
+        "normalized_energy_cost": 110.30851574923145,
+        "normalized_carbon_emission": 27.995498863994726
+      },
+      "seconds_per_step": 0.02135407927877016,
+      "controller_seconds_per_step": 0.0003112539399820788
+    },
+    {
+      "building": "building_train_8",
+      "weather": "fairbanks_8",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -99.2822500684124,
+      "mean_reward": -0.049247147851395036,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 163.10113429150078,
+        "normalized_carbon_emission": 333.31011637611664
+      },
+      "seconds_per_step": 0.021114908721200563,
+      "controller_seconds_per_step": 0.0003046735510926579
+    },
+    {
+      "building": "building_train_8",
+      "weather": "phoenix_4",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -75.24294649373041,
+      "mean_reward": -0.03732289012585834,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 304.6410982427187,
+        "normalized_carbon_emission": 71.5736340637668
+      },
+      "seconds_per_step": 0.020862949841775013,
+      "controller_seconds_per_step": 0.0003014565774299352
+    },
+    {
+      "building": "building_train_8",
+      "weather": "singapore_7",
+      "scenario_dir": "/home/ubuntu/repos/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7",
+      "policy": "tuned",
+      "num_steps": 2016,
+      "total_reward": -41.58970370842144,
+      "mean_reward": -0.020629813347431268,
+      "component_totals": {
+        "normalized_productivity_regret": 0.0,
+        "normalized_energy_cost": 168.58214079099707,
+        "normalized_carbon_emission": 39.36637794598937
+      },
+      "seconds_per_step": 0.02003146375050038,
+      "controller_seconds_per_step": 0.00030348895534694346
+    }
+  ],
+  "baseline_mean_rewards": {},
+  "baseline_metrics": {},
+  "baseline_scenario_count": 0
+}

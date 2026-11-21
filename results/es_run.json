@@ -1,0 +1,40 @@
+{
+  "generations": 54,
+  "wall_budget_hours": 3.5,
+  "elapsed_seconds": 12402.241784812,
+  "termination": "budget_stop",
+  "population": 8,
+  "batch": 3,
+  "horizon_steps": 864,
+  "seed": 2026,
+  "training_pool_count": 72,
+  "promotion_scenarios": [
+    "building_train_1/atlanta_2",
+    "building_train_2/denver_8",
+    "building_train_4/fairbanks_4",
+    "building_train_5/phoenix_1",
+    "building_train_7/singapore_6"
+  ],
+  "best_generation": 50,
+  "best_validation_metric": 0.007301654983907441,
+  "initial_validation_metric": 0.013688716028828249,
+  "promotion_count": 14,
+  "params": {
+    "kp": 0.09145200629052036,
+    "ki": 0.00042191397324968136,
+    "integral_limit": 0.49448856035895145,
+    "prestart_hours": 1.9882729048197905,
+    "cooling_hold_steps": 27.465376262226393,
+    "heating_setback": 4.44531512554309,
+    "damper_gain": 1.2672800421977144,
+    "reheat_gain": 0.7899473232013305,
+    "fan_base": 0.10106138822118137,
+    "fan_gain": 0.020629988790295206,
+    "sat_base": 291.71237399107986,
+    "sat_gain": 18.007368353852243,
+    "water_base": 0.3025369858267709,
+    "water_gain": 0.9216445411439098,
+    "on_threshold": 0.03430584194915711,
+    "econ_advantage": 1.8837488276595016
+  }
+}

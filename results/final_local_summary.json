@@ -1,0 +1,395 @@
+{
+  "label": "Local starter-kit simulator results \u2014 NOT a real competition score",
+  "steps": 2016,
+  "days": 7,
+  "workers": 7,
+  "seed": 0,
+  "metric": "Mean over scenarios of negative mean per-step reward; lower is better",
+  "scenario_count": 30,
+  "metrics": {
+    "promoted": 0.012796682270318197,
+    "defaults": 0.027814746329105102,
+    "pid_water": 0.06020103066668449
+  },
+  "subsets": {
+    "promotion_subset": {
+      "count": 5,
+      "metrics": {
+        "promoted": 0.007661404838914418,
+        "defaults": 0.014141786748834623,
+        "pid_water": 0.03230838680862025
+      }
+    },
+    "independent_subset": {
+      "count": 25,
+      "metrics": {
+        "promoted": 0.013823737756598954,
+        "defaults": 0.0305493382451592,
+        "pid_water": 0.06577955943829733
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": "building_train_1/atlanta_2",
+      "used_for_promotion": true,
+      "scores": {
+        "promoted": 0.004302197920229186,
+        "defaults": 0.009706318952844918,
+        "pid_water": 0.019494469138108466
+      }
+    },
+    {
+      "scenario": "building_train_1/denver_7",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.005301987705977462,
+        "defaults": 0.010329756688334451,
+        "pid_water": 0.02725075890969836
+      }
+    },
+    {
+      "scenario": "building_train_1/fairbanks_1",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.07767512269504276,
+        "defaults": 0.26624341046070704,
+        "pid_water": 0.3786658999264517
+      }
+    },
+    {
+      "scenario": "building_train_1/phoenix_5",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.02176969488209579,
+        "defaults": 0.044727435173771236,
+        "pid_water": 0.12065732147912347
+      }
+    },
+    {
+      "scenario": "building_train_1/singapore_8",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.011874964524943766,
+        "defaults": 0.02235296715376275,
+        "pid_water": 0.036379710425145664
+      }
+    },
+    {
+      "scenario": "building_train_2/atlanta_3",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.004490166618693149,
+        "defaults": 0.008976133635278818,
+        "pid_water": 0.019932165649530518
+      }
+    },
+    {
+      "scenario": "building_train_2/denver_8",
+      "used_for_promotion": true,
+      "scores": {
+        "promoted": 0.011862060154574769,
+        "defaults": 0.017755069371415876,
+        "pid_water": 0.0475849228256502
+      }
+    },
+    {
+      "scenario": "building_train_2/fairbanks_2",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.026125541246348426,
+        "defaults": 0.04056133204989641,
+        "pid_water": 0.13606384146242773
+      }
+    },
+    {
+      "scenario": "building_train_2/phoenix_6",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.014608958999959877,
+        "defaults": 0.03560206564601223,
+        "pid_water": 0.09258453668059831
+      }
+    },
+    {
+      "scenario": "building_train_2/singapore_1",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.007657006823253127,
+        "defaults": 0.016308898629436692,
+        "pid_water": 0.02317672468797398
+      }
+    },
+    {
+      "scenario": "building_train_4/atlanta_5",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.009692326501415606,
+        "defaults": 0.018671230560581564,
+        "pid_water": 0.027916739321747788
+      }
+    },
+    {
+      "scenario": "building_train_4/denver_2",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.008831240503573172,
+        "defaults": 0.015611959693279416,
+        "pid_water": 0.048847041572813284
+      }
+    },
+    {
+      "scenario": "building_train_4/fairbanks_4",
+      "used_for_promotion": true,
+      "scores": {
+        "promoted": 0.0043674665349600315,
+        "defaults": 0.009028559786184049,
+        "pid_water": 0.031807388986500144
+      }
+    },
+    {
+      "scenario": "building_train_4/phoenix_8",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.0038926255924490675,
+        "defaults": 0.008201207186168234,
+        "pid_water": 0.016348215989802205
+      }
+    },
+    {
+      "scenario": "building_train_4/singapore_3",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.011544271332645116,
+        "defaults": 0.02284425154560282,
+        "pid_water": 0.038649448282855686
+      }
+    },
+    {
+      "scenario": "building_train_5/atlanta_6",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.00864849978536349,
+        "defaults": 0.016693105012376374,
+        "pid_water": 0.04785948660559919
+      }
+    },
+    {
+      "scenario": "building_train_5/denver_3",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.009729591695282752,
+        "defaults": 0.014724732186622864,
+        "pid_water": 0.04314289335542569
+      }
+    },
+    {
+      "scenario": "building_train_5/fairbanks_5",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.003923191168651679,
+        "defaults": 0.006796158902355432,
+        "pid_water": 0.013808740608932826
+      }
+    },
+    {
+      "scenario": "building_train_5/phoenix_1",
+      "used_for_promotion": true,
+      "scores": {
+        "promoted": 0.006453646582182652,
+        "defaults": 0.010360473172690872,
+        "pid_water": 0.032147603004741794
+      }
+    },
+    {
+      "scenario": "building_train_5/singapore_4",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.010025910712087468,
+        "defaults": 0.019962624964324594,
+        "pid_water": 0.07886453223123421
+      }
+    },
+    {
+      "scenario": "building_train_7/atlanta_8",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.011908756953325503,
+        "defaults": 0.01761591197438455,
+        "pid_water": 0.05063869498068622
+      }
+    },
+    {
+      "scenario": "building_train_7/denver_5",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.0054045530268778084,
+        "defaults": 0.009960919490396687,
+        "pid_water": 0.016265857425149455
+      }
+    },
+    {
+      "scenario": "building_train_7/fairbanks_7",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.011621126841577827,
+        "defaults": 0.01719404350301158,
+        "pid_water": 0.05691520099970235
+      }
+    },
+    {
+      "scenario": "building_train_7/phoenix_3",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.008593546168615122,
+        "defaults": 0.016928955471369606,
+        "pid_water": 0.025814293364866955
+      }
+    },
+    {
+      "scenario": "building_train_7/singapore_6",
+      "used_for_promotion": true,
+      "scores": {
+        "promoted": 0.01132165300262545,
+        "defaults": 0.023858512461037394,
+        "pid_water": 0.03050755008810065
+      }
+    },
+    {
+      "scenario": "building_train_8/atlanta_1",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.007294995806313679,
+        "defaults": 0.012472929623086996,
+        "pid_water": 0.02292625184648906
+      }
+    },
+    {
+      "scenario": "building_train_8/denver_6",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.007689372567328396,
+        "defaults": 0.01375357525353499,
+        "pid_water": 0.022364009403782616
+      }
+    },
+    {
+      "scenario": "building_train_8/fairbanks_8",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.030105851206956556,
+        "defaults": 0.049247147851395036,
+        "pid_water": 0.08021155115227249
+      }
+    },
+    {
+      "scenario": "building_train_8/phoenix_4",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.016948583846983854,
+        "defaults": 0.03732289012585834,
+        "pid_water": 0.14178551525324903
+      }
+    },
+    {
+      "scenario": "building_train_8/singapore_7",
+      "used_for_promotion": false,
+      "scores": {
+        "promoted": 0.010235556709212399,
+        "defaults": 0.020629813347431268,
+        "pid_water": 0.07741955434187456
+      }
+    }
+  ],
+  "params": {
+    "promoted": {
+      "kp": 0.09145200629052036,
+      "ki": 0.00042191397324968136,
+      "integral_limit": 0.49448856035895145,
+      "prestart_hours": 1.9882729048197905,
+      "cooling_hold_steps": 27.465376262226393,
+      "heating_setback": 4.44531512554309,
+      "damper_gain": 1.2672800421977144,
+      "reheat_gain": 0.7899473232013305,
+      "fan_base": 0.10106138822118137,
+      "fan_gain": 0.020629988790295206,
+      "sat_base": 291.71237399107986,
+      "sat_gain": 18.007368353852243,
+      "water_base": 0.3025369858267709,
+      "water_gain": 0.9216445411439098,
+      "on_threshold": 0.03430584194915711,
+      "econ_advantage": 1.8837488276595016
+    },
+    "defaults": {
+      "kp": 0.07,
+      "ki": 0.0035,
+      "integral_limit": 1.0,
+      "prestart_hours": 2.0,
+      "cooling_hold_steps": 288.0,
+      "heating_setback": 2.0,
+      "damper_gain": 1.0,
+      "reheat_gain": 1.0,
+      "fan_base": 0.1,
+      "fan_gain": 0.7,
+      "sat_base": 295.0,
+      "sat_gain": 10.0,
+      "water_base": 0.0,
+      "water_gain": 1.0,
+      "on_threshold": 0.03,
+      "econ_advantage": 2.0
+    }
+  },
+  "es_run": {
+    "generations": 54,
+    "wall_budget_hours": 3.5,
+    "elapsed_seconds": 12402.241784812,
+    "termination": "budget_stop",
+    "population": 8,
+    "batch": 3,
+    "horizon_steps": 864,
+    "seed": 2026,
+    "training_pool_count": 72,
+    "promotion_scenarios": [
+      "building_train_1/atlanta_2",
+      "building_train_2/denver_8",
+      "building_train_4/fairbanks_4",
+      "building_train_5/phoenix_1",
+      "building_train_7/singapore_6"
+    ],
+    "best_generation": 50,
+    "best_validation_metric": 0.007301654983907441,
+    "initial_validation_metric": 0.013688716028828249,
+    "promotion_count": 14,
+    "params": {
+      "kp": 0.09145200629052036,
+      "ki": 0.00042191397324968136,
+      "integral_limit": 0.49448856035895145,
+      "prestart_hours": 1.9882729048197905,
+      "cooling_hold_steps": 27.465376262226393,
+      "heating_setback": 4.44531512554309,
+      "damper_gain": 1.2672800421977144,
+      "reheat_gain": 0.7899473232013305,
+      "fan_base": 0.10106138822118137,
+      "fan_gain": 0.020629988790295206,
+      "sat_base": 291.71237399107986,
+      "sat_gain": 18.007368353852243,
+      "water_base": 0.3025369858267709,
+      "water_gain": 0.9216445411439098,
+      "on_threshold": 0.03430584194915711,
+      "econ_advantage": 1.8837488276595016
+    }
+  },
+  "improvement_percent_vs": {
+    "defaults": 53.99317283390839,
+    "pid_water": 78.7434166348917
+  },
+  "scenario_wins_vs": {
+    "defaults": 30,
+    "pid_water": 30
+  },
+  "mean_simulator_seconds_per_step": {
+    "promoted": 0.05162523214556028,
+    "defaults": 0.04883327151989061,
+    "pid_water": 0.05176091116216586
+  }
+}
